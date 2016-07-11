@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC90FF8AD469DC612E2D4709 /* libPods-UfaFarfor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93671513AAC96F142409C929 /* libPods-UfaFarfor.a */; };
+		E06CA0891D3141AA00BFDAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0881D3141AA00BFDAC3 /* main.m */; };
+		E06CA08C1D3141AA00BFDAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA08B1D3141AA00BFDAC3 /* AppDelegate.m */; };
+		E06CA0921D3141AA00BFDAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0901D3141AA00BFDAC3 /* Main.storyboard */; };
+		E06CA0941D3141AA00BFDAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0931D3141AA00BFDAC3 /* Assets.xcassets */; };
+		E06CA0971D3141AA00BFDAC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0951D3141AA00BFDAC3 /* LaunchScreen.storyboard */; };
+		E06CA0A01D3141D600BFDAC3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA09F1D3141D600BFDAC3 /* MainViewController.m */; };
+		E06CA0A31D31432900BFDAC3 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0A21D31432900BFDAC3 /* ServerManager.m */; };
+		E06CA0A61D31436100BFDAC3 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0A51D31436100BFDAC3 /* Categories.m */; };
+		E06CA0A91D31439500BFDAC3 /* Offers.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0A81D31439500BFDAC3 /* Offers.m */; };
+		E06CA0B21D31456200BFDAC3 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0B01D31456200BFDAC3 /* CategoryTableViewCell.m */; };
+		E06CA0B31D31456200BFDAC3 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0B11D31456200BFDAC3 /* CategoryTableViewCell.xib */; };
+		E06CA0BE1D32C03200BFDAC3 /* OfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0BD1D32C03200BFDAC3 /* OfferViewController.m */; };
+		E06CA0C21D32C13100BFDAC3 /* OfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0C01D32C13100BFDAC3 /* OfferTableViewCell.m */; };
+		E06CA0C31D32C13100BFDAC3 /* OfferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0C11D32C13100BFDAC3 /* OfferTableViewCell.xib */; };
+		E06CA0C81D330E6300BFDAC3 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0C71D330E6300BFDAC3 /* DescriptionViewController.m */; };
+		E06CA0D01D33DF0500BFDAC3 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0CF1D33DF0500BFDAC3 /* LeftMenuViewController.m */; };
+		E06CA0D31D33E95400BFDAC3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0D21D33E95400BFDAC3 /* SWRevealViewController.m */; };
+		E06CA0D61D33FC7600BFDAC3 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0D51D33FC7600BFDAC3 /* ContactsViewController.m */; };
+		E06CA0D81D3411D100BFDAC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06CA0D71D3411D100BFDAC3 /* MapKit.framework */; };
+		E06CA0DA1D342D5D00BFDAC3 /* pins.json in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0D91D342D5D00BFDAC3 /* pins.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EE37DFF990AF2948D84F1DA /* Pods-UfaFarfor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UfaFarfor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UfaFarfor/Pods-UfaFarfor.debug.xcconfig"; sourceTree = "<group>"; };
+		6EA32D256882C0516FBBD53A /* Pods-UfaFarfor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UfaFarfor.release.xcconfig"; path = "Pods/Target Support Files/Pods-UfaFarfor/Pods-UfaFarfor.release.xcconfig"; sourceTree = "<group>"; };
+		93671513AAC96F142409C929 /* libPods-UfaFarfor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UfaFarfor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CA0841D3141AA00BFDAC3 /* UfaFarfor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UfaFarfor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06CA0881D3141AA00BFDAC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E06CA08A1D3141AA00BFDAC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E06CA08B1D3141AA00BFDAC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E06CA0911D3141AA00BFDAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E06CA0931D3141AA00BFDAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E06CA0961D3141AA00BFDAC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E06CA0981D3141AA00BFDAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06CA09E1D3141D600BFDAC3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		E06CA09F1D3141D600BFDAC3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		E06CA0A11D31432900BFDAC3 /* ServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
+		E06CA0A21D31432900BFDAC3 /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
+		E06CA0A41D31436100BFDAC3 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		E06CA0A51D31436100BFDAC3 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
+		E06CA0A71D31439500BFDAC3 /* Offers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offers.h; sourceTree = "<group>"; };
+		E06CA0A81D31439500BFDAC3 /* Offers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offers.m; sourceTree = "<group>"; };
+		E06CA0AF1D31456200BFDAC3 /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewCell.h; sourceTree = "<group>"; };
+		E06CA0B01D31456200BFDAC3 /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewCell.m; sourceTree = "<group>"; };
+		E06CA0B11D31456200BFDAC3 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		E06CA0BC1D32C03200BFDAC3 /* OfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferViewController.h; sourceTree = "<group>"; };
+		E06CA0BD1D32C03200BFDAC3 /* OfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferViewController.m; sourceTree = "<group>"; };
+		E06CA0BF1D32C13100BFDAC3 /* OfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferTableViewCell.h; sourceTree = "<group>"; };
+		E06CA0C01D32C13100BFDAC3 /* OfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferTableViewCell.m; sourceTree = "<group>"; };
+		E06CA0C11D32C13100BFDAC3 /* OfferTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferTableViewCell.xib; sourceTree = "<group>"; };
+		E06CA0C61D330E6300BFDAC3 /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
+		E06CA0C71D330E6300BFDAC3 /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionViewController.m; sourceTree = "<group>"; };
+		E06CA0CE1D33DF0500BFDAC3 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		E06CA0CF1D33DF0500BFDAC3 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		E06CA0D11D33E95400BFDAC3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E06CA0D21D33E95400BFDAC3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E06CA0D41D33FC7600BFDAC3 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		E06CA0D51D33FC7600BFDAC3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		E06CA0D71D3411D100BFDAC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E06CA0D91D342D5D00BFDAC3 /* pins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pins.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E06CA0811D3141AA00BFDAC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06CA0D81D3411D100BFDAC3 /* MapKit.framework in Frameworks */,
+				DC90FF8AD469DC612E2D4709 /* libPods-UfaFarfor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D218802FDA92B0CFA872AC92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EE37DFF990AF2948D84F1DA /* Pods-UfaFarfor.debug.xcconfig */,
+				6EA32D256882C0516FBBD53A /* Pods-UfaFarfor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E06CA07B1D3141AA00BFDAC3 = {
+			isa = PBXGroup;
+			children = (
+				E06CA0861D3141AA00BFDAC3 /* UfaFarfor */,
+				E06CA0851D3141AA00BFDAC3 /* Products */,
+				D218802FDA92B0CFA872AC92 /* Pods */,
+				E3425E114CB218C759B0A95D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E06CA0851D3141AA00BFDAC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E06CA0841D3141AA00BFDAC3 /* UfaFarfor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E06CA0861D3141AA00BFDAC3 /* UfaFarfor */ = {
+			isa = PBXGroup;
+			children = (
+				E06CA08A1D3141AA00BFDAC3 /* AppDelegate.h */,
+				E06CA08B1D3141AA00BFDAC3 /* AppDelegate.m */,
+				E06CA0A11D31432900BFDAC3 /* ServerManager.h */,
+				E06CA0A21D31432900BFDAC3 /* ServerManager.m */,
+				E06CA0A41D31436100BFDAC3 /* Categories.h */,
+				E06CA0A51D31436100BFDAC3 /* Categories.m */,
+				E06CA0A71D31439500BFDAC3 /* Offers.h */,
+				E06CA0A81D31439500BFDAC3 /* Offers.m */,
+				E06CA0C41D32C75600BFDAC3 /* View Controllers */,
+				E06CA0C51D32C77300BFDAC3 /* Cells */,
+				E06CA0901D3141AA00BFDAC3 /* Main.storyboard */,
+				E06CA0931D3141AA00BFDAC3 /* Assets.xcassets */,
+				E06CA0951D3141AA00BFDAC3 /* LaunchScreen.storyboard */,
+				E06CA0981D3141AA00BFDAC3 /* Info.plist */,
+				E06CA0D91D342D5D00BFDAC3 /* pins.json */,
+				E06CA0871D3141AA00BFDAC3 /* Supporting Files */,
+			);
+			path = UfaFarfor;
+			sourceTree = "<group>";
+		};
+		E06CA0871D3141AA00BFDAC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E06CA0881D3141AA00BFDAC3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E06CA0C41D32C75600BFDAC3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E06CA09E1D3141D600BFDAC3 /* MainViewController.h */,
+				E06CA09F1D3141D600BFDAC3 /* MainViewController.m */,
+				E06CA0BC1D32C03200BFDAC3 /* OfferViewController.h */,
+				E06CA0BD1D32C03200BFDAC3 /* OfferViewController.m */,
+				E06CA0C61D330E6300BFDAC3 /* DescriptionViewController.h */,
+				E06CA0C71D330E6300BFDAC3 /* DescriptionViewController.m */,
+				E06CA0CE1D33DF0500BFDAC3 /* LeftMenuViewController.h */,
+				E06CA0CF1D33DF0500BFDAC3 /* LeftMenuViewController.m */,
+				E06CA0D11D33E95400BFDAC3 /* SWRevealViewController.h */,
+				E06CA0D21D33E95400BFDAC3 /* SWRevealViewController.m */,
+				E06CA0D41D33FC7600BFDAC3 /* ContactsViewController.h */,
+				E06CA0D51D33FC7600BFDAC3 /* ContactsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E06CA0C51D32C77300BFDAC3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E06CA0AF1D31456200BFDAC3 /* CategoryTableViewCell.h */,
+				E06CA0B01D31456200BFDAC3 /* CategoryTableViewCell.m */,
+				E06CA0B11D31456200BFDAC3 /* CategoryTableViewCell.xib */,
+				E06CA0BF1D32C13100BFDAC3 /* OfferTableViewCell.h */,
+				E06CA0C01D32C13100BFDAC3 /* OfferTableViewCell.m */,
+				E06CA0C11D32C13100BFDAC3 /* OfferTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E3425E114CB218C759B0A95D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06CA0D71D3411D100BFDAC3 /* MapKit.framework */,
+				93671513AAC96F142409C929 /* libPods-UfaFarfor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E06CA0831D3141AA00BFDAC3 /* UfaFarfor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06CA09B1D3141AA00BFDAC3 /* Build configuration list for PBXNativeTarget "UfaFarfor" */;
+			buildPhases = (
+				6B79B3526A1D4D1794CA4E43 /* 📦 Check Pods Manifest.lock */,
+				E06CA0801D3141AA00BFDAC3 /* Sources */,
+				E06CA0811D3141AA00BFDAC3 /* Frameworks */,
+				E06CA0821D3141AA00BFDAC3 /* Resources */,
+				617EFAC4DD6B3D71657C2385 /* 📦 Embed Pods Frameworks */,
+				6FC16FCA65254EF6A28C488F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UfaFarfor;
+			productName = UfaFarfor;
+			productReference = E06CA0841D3141AA00BFDAC3 /* UfaFarfor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E06CA07C1D3141AA00BFDAC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = StasMalinovsky;
+				TargetAttributes = {
+					E06CA0831D3141AA00BFDAC3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JL8VH5EUAX;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E06CA07F1D3141AA00BFDAC3 /* Build configuration list for PBXProject "UfaFarfor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E06CA07B1D3141AA00BFDAC3;
+			productRefGroup = E06CA0851D3141AA00BFDAC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E06CA0831D3141AA00BFDAC3 /* UfaFarfor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E06CA0821D3141AA00BFDAC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06CA0971D3141AA00BFDAC3 /* LaunchScreen.storyboard in Resources */,
+				E06CA0941D3141AA00BFDAC3 /* Assets.xcassets in Resources */,
+				E06CA0C31D32C13100BFDAC3 /* OfferTableViewCell.xib in Resources */,
+				E06CA0921D3141AA00BFDAC3 /* Main.storyboard in Resources */,
+				E06CA0B31D31456200BFDAC3 /* CategoryTableViewCell.xib in Resources */,
+				E06CA0DA1D342D5D00BFDAC3 /* pins.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		617EFAC4DD6B3D71657C2385 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UfaFarfor/Pods-UfaFarfor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B79B3526A1D4D1794CA4E43 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC16FCA65254EF6A28C488F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UfaFarfor/Pods-UfaFarfor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06CA0801D3141AA00BFDAC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06CA0A31D31432900BFDAC3 /* ServerManager.m in Sources */,
+				E06CA08C1D3141AA00BFDAC3 /* AppDelegate.m in Sources */,
+				E06CA0C21D32C13100BFDAC3 /* OfferTableViewCell.m in Sources */,
+				E06CA0A01D3141D600BFDAC3 /* MainViewController.m in Sources */,
+				E06CA0D61D33FC7600BFDAC3 /* ContactsViewController.m in Sources */,
+				E06CA0B21D31456200BFDAC3 /* CategoryTableViewCell.m in Sources */,
+				E06CA0C81D330E6300BFDAC3 /* DescriptionViewController.m in Sources */,
+				E06CA0A61D31436100BFDAC3 /* Categories.m in Sources */,
+				E06CA0A91D31439500BFDAC3 /* Offers.m in Sources */,
+				E06CA0BE1D32C03200BFDAC3 /* OfferViewController.m in Sources */,
+				E06CA0891D3141AA00BFDAC3 /* main.m in Sources */,
+				E06CA0D01D33DF0500BFDAC3 /* LeftMenuViewController.m in Sources */,
+				E06CA0D31D33E95400BFDAC3 /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E06CA0901D3141AA00BFDAC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06CA0911D3141AA00BFDAC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E06CA0951D3141AA00BFDAC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06CA0961D3141AA00BFDAC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E06CA0991D3141AA00BFDAC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E06CA09A1D3141AA00BFDAC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E06CA09C1D3141AA00BFDAC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE37DFF990AF2948D84F1DA /* Pods-UfaFarfor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UfaFarfor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stas.malinovsky.UfaFarfor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E06CA09D1D3141AA00BFDAC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA32D256882C0516FBBD53A /* Pods-UfaFarfor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UfaFarfor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stas.malinovsky.UfaFarfor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E06CA07F1D3141AA00BFDAC3 /* Build configuration list for PBXProject "UfaFarfor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06CA0991D3141AA00BFDAC3 /* Debug */,
+				E06CA09A1D3141AA00BFDAC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06CA09B1D3141AA00BFDAC3 /* Build configuration list for PBXNativeTarget "UfaFarfor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06CA09C1D3141AA00BFDAC3 /* Debug */,
+				E06CA09D1D3141AA00BFDAC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E06CA07C1D3141AA00BFDAC3 /* Project object */;
+}
