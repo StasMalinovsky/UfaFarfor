@@ -43,6 +43,15 @@ static NSString *kCategoryCellIdentifier = @"CategoryCellIdentifier";
     [super viewDidLoad];
     [self registerNib];
     
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+    
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [self.spinner setCenter:CGPointMake(screenWidth/2, screenHeight/2)];
+    [self.view addSubview:self.spinner];
+    [self.spinner startAnimating];
+    
     self.sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     self.sidebarButton.target = self.revealViewController;
     self.sidebarButton.action = @selector(revealToggle:);
@@ -122,6 +131,7 @@ static NSString *kCategoryCellIdentifier = @"CategoryCellIdentifier";
 - (void)categoriesDidLoad:(NSMutableArray *)categories {
     [self.foodArray addObjectsFromArray: categories];
     dispatch_async(dispatch_get_main_queue(), ^{
+        [self.spinner stopAnimating];
         [self.tableView reloadData];
     });
 }
