@@ -153,6 +153,10 @@ foundCharacters:(NSString *)string {
     if ([_currentElement isEqualToString:@"categoryId"]) {
         if(![string containsString:@"\n   "] && [self.currentOfferId isEqualToString:self.currentOffer.offerId]) {
             self.currentOffer.categoryId = string;
+            
+            if ([self.currentOffer.categoryId isEqualToString:@"25"]) {
+                self.currentOffer.offerWeight = @"0";
+            }
         }
     }
     
@@ -164,16 +168,24 @@ foundCharacters:(NSString *)string {
     
     if ([_currentElement isEqualToString:@"description"]) {
         if (![string containsString:@"\n   "]) {
-            self.currentOffer.offerDescription = string;
+        
+            if (self.currentOffer.offerDescription) {
+                self.currentOffer.offerDescription = [self.currentOffer.offerDescription stringByAppendingString:string];
+            } else {
+                self.currentOffer.offerDescription = string;
+            }
         }
+        
     }
     
     if ([_currentElement isEqualToString:@"param"] && [self.currentOfferId isEqualToString:self.currentOffer.offerId]) {
         if(![string containsString:@"\n   "] && [self.currentParamKey isEqualToString:@"Вес"]) {
             
             if ([self.currentOffer.params valueForKey:self.currentParamKey]) {
-                [self.currentOffer.params setValue:[[self.currentOffer.params valueForKey:self.currentParamKey] stringByAppendingString:string] forKey:self.currentParamKey];
-                NSLog(@"");
+                
+                NSString *editedString = [[self.currentOffer.params valueForKey:self.currentParamKey]
+                                          stringByAppendingString:string];
+                self.currentOffer.offerWeight = editedString;
             } else {
                 [self.currentOffer.params setValue:string forKey:self.currentParamKey];
             }
@@ -187,10 +199,7 @@ foundCharacters:(NSString *)string {
   qualifiedName:(NSString *)qName {
     
     if ([elementName isEqualToString:@"url"]) {
-//        NSLog(@"%@", elementName);
         [self.offerArray addObject:self.currentOffer];
-        
-        //self.currentOffer = nil;
     }
     
     if (_currentCategoryId != nil) {

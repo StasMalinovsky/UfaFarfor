@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSMutableArray *addressArray;
 @property (strong, nonatomic) NSMutableArray *latArray;
 @property (strong, nonatomic) NSMutableArray *longArray;
+@property (strong, nonatomic) NSMutableArray *telephoneArray;
 
 @end
 
@@ -71,6 +72,7 @@
     self.addressArray = [self parseJSONWithKey:@"address"];
     self.latArray = [self parseJSONWithKey:@"latitude"];
     self.longArray = [self parseJSONWithKey:@"longitude"];
+    self.telephoneArray = [self parseJSONWithKey:@"telephone"];
     
     for (int i = 0; i < self.citiesArray.count; i++) {
         MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
@@ -78,8 +80,9 @@
         CLLocationDegrees longitude = [[self.longArray objectAtIndex:i] doubleValue];
         CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitude, longitude);
         point.coordinate = coord;
-        point.title = [NSString stringWithFormat:@"%@", [self.citiesArray objectAtIndex:i]];
-        point.subtitle = [NSString stringWithFormat:@"%@", [self.addressArray objectAtIndex:i]];
+        point.title = [NSString stringWithFormat:@"%@, %@", [self.citiesArray objectAtIndex:i],
+                                                            [self.addressArray objectAtIndex:i]];
+        point.subtitle = [NSString stringWithFormat:@"%@", [self.telephoneArray objectAtIndex:i]];
         [self.mapView addAnnotation:point];
     }
 }

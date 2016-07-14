@@ -44,19 +44,15 @@ static NSString *kCategoryCellIdentifier = @"CategoryCellIdentifier";
     [self registerNib];
     
     self.sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
-    
     self.sidebarButton.target = self.revealViewController;
     self.sidebarButton.action = @selector(revealToggle:);
-    
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
-    [ServerManager sharedInstance].delegate = self;
     self.foodArray = [NSMutableArray new];
     self.offerArray = [NSMutableArray new];
+    
+    [ServerManager sharedInstance].delegate = self;
     [[ServerManager sharedInstance] parseXMLFile];
-    
-    [self.tableView reloadData];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -88,17 +84,15 @@ static NSString *kCategoryCellIdentifier = @"CategoryCellIdentifier";
     Categories *food = self.foodArray[indexPath.row];
     
     cell.categoryHead.text = [NSString stringWithFormat:@"%@", food.categoryName];
-
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//       
-//    });
-    
     cell.categoryImage.image = [self getImageForCategoryId:food.categoryId];
-    
+
     return cell;
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"");
+    
     return 80.f;
 }
 
@@ -127,16 +121,13 @@ static NSString *kCategoryCellIdentifier = @"CategoryCellIdentifier";
 
 - (void)categoriesDidLoad:(NSMutableArray *)categories {
     [self.foodArray addObjectsFromArray: categories];
-    [self.tableView reloadData];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
 }
 
 - (void) offersDidLoad:(NSMutableArray *)offers {
     self.offerArray = offers;
-    
-//    [self.spinner stopAnimating];
-//    [self.spinner setHidden:YES];
-//    [self.spinner removeFromSuperview];
-    [self.tableView reloadData];
 }
 
 - (UIImage *)getImageForCategoryId:(NSString *)categoryId {

@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *offerNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *offerWeightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *offerPriceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *offerDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextView *offerDescriptionTextView;
 
 @property (strong, nonatomic) Offers* offer;
 

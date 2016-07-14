@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString *offerPicture;
 @property (nonatomic, strong) NSString *categoryId;
 @property (nonatomic, strong) NSMutableDictionary *params;
+@property (nonatomic, strong) NSString *offerWeight;
 
 - (id) initWithOfferId:(NSString *) offerId;
 

@@ -10,7 +10,7 @@
 
 @protocol ServerManagerDelegate;
 
-@interface MainViewController : UIViewController <NSXMLParserDelegate, UITableViewDelegate, ServerManagerDelegate>
+@interface MainViewController : UIViewController <NSXMLParserDelegate, UITableViewDelegate, UITableViewDataSource, ServerManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
