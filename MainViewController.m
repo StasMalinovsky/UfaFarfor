@@ -60,6 +60,10 @@ static NSString *kCategoryCellIdentifier = @"CategoryCellIdentifier";
     self.foodArray = [NSMutableArray new];
     self.offerArray = [NSMutableArray new];
     
+//    if (self.isBeingPresented || self.isMovingToParentViewController) {
+//        NSLog(@"");
+//    }
+    
     [ServerManager sharedInstance].delegate = self;
     [[ServerManager sharedInstance] parseXMLFile];
 }

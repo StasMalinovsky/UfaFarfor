@@ -28,6 +28,8 @@
 		E06CA0D61D33FC7600BFDAC3 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06CA0D51D33FC7600BFDAC3 /* ContactsViewController.m */; };
 		E06CA0D81D3411D100BFDAC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06CA0D71D3411D100BFDAC3 /* MapKit.framework */; };
 		E06CA0DA1D342D5D00BFDAC3 /* pins.json in Resources */ = {isa = PBXBuildFile; fileRef = E06CA0D91D342D5D00BFDAC3 /* pins.json */; };
+		E0A8D43D1D3859AD0010A4F3 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A8D43B1D3859AD0010A4F3 /* ContactsTableViewCell.m */; };
+		E0A8D43E1D3859AD0010A4F3 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A8D43C1D3859AD0010A4F3 /* ContactsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,9 @@
 		E06CA0D51D33FC7600BFDAC3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		E06CA0D71D3411D100BFDAC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E06CA0D91D342D5D00BFDAC3 /* pins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pins.json; sourceTree = "<group>"; };
+		E0A8D43A1D3859AD0010A4F3 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
+		E0A8D43B1D3859AD0010A4F3 /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
+		E0A8D43C1D3859AD0010A4F3 /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +168,9 @@
 		E06CA0C51D32C77300BFDAC3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E0A8D43A1D3859AD0010A4F3 /* ContactsTableViewCell.h */,
+				E0A8D43B1D3859AD0010A4F3 /* ContactsTableViewCell.m */,
+				E0A8D43C1D3859AD0010A4F3 /* ContactsTableViewCell.xib */,
 				E06CA0AF1D31456200BFDAC3 /* CategoryTableViewCell.h */,
 				E06CA0B01D31456200BFDAC3 /* CategoryTableViewCell.m */,
 				E06CA0B11D31456200BFDAC3 /* CategoryTableViewCell.xib */,
@@ -249,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06CA0971D3141AA00BFDAC3 /* LaunchScreen.storyboard in Resources */,
+				E0A8D43E1D3859AD0010A4F3 /* ContactsTableViewCell.xib in Resources */,
 				E06CA0941D3141AA00BFDAC3 /* Assets.xcassets in Resources */,
 				E06CA0C31D32C13100BFDAC3 /* OfferTableViewCell.xib in Resources */,
 				E06CA0921D3141AA00BFDAC3 /* Main.storyboard in Resources */,
@@ -318,6 +327,7 @@
 				E06CA0A01D3141D600BFDAC3 /* MainViewController.m in Sources */,
 				E06CA0D61D33FC7600BFDAC3 /* ContactsViewController.m in Sources */,
 				E06CA0B21D31456200BFDAC3 /* CategoryTableViewCell.m in Sources */,
+				E0A8D43D1D3859AD0010A4F3 /* ContactsTableViewCell.m in Sources */,
 				E06CA0C81D330E6300BFDAC3 /* DescriptionViewController.m in Sources */,
 				E06CA0A61D31436100BFDAC3 /* Categories.m in Sources */,
 				E06CA0A91D31439500BFDAC3 /* Offers.m in Sources */,

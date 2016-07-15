@@ -11,6 +11,7 @@
 
 @interface ContactsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 

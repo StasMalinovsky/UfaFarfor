@@ -291,14 +291,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TnI-uS-F79">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="322" width="600" height="278"/>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-9s-gFj">
+                                <rect key="frame" x="0.0" y="64" width="600" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Qa7-zm-CdR"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="1kC-gN-ytd" id="tjl-vA-m3p"/>
+                                    <outlet property="delegate" destination="1kC-gN-ytd" id="IBh-aO-j2C"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lae-9s-gFj" secondAttribute="trailing" id="Ovz-6X-ArN"/>
+                            <constraint firstItem="TnI-uS-F79" firstAttribute="top" secondItem="Lae-9s-gFj" secondAttribute="bottom" constant="8" id="Sod-Gq-88y"/>
                             <constraint firstAttribute="trailing" secondItem="TnI-uS-F79" secondAttribute="trailing" id="Trn-E6-AX9"/>
-                            <constraint firstItem="TnI-uS-F79" firstAttribute="top" secondItem="Bzj-2H-dP8" secondAttribute="bottom" id="ULv-Ln-RRD"/>
+                            <constraint firstItem="Lae-9s-gFj" firstAttribute="leading" secondItem="gM6-Ko-dFE" secondAttribute="leading" id="fQE-5f-dMD"/>
                             <constraint firstItem="TnI-uS-F79" firstAttribute="leading" secondItem="gM6-Ko-dFE" secondAttribute="leading" id="lWz-az-86I"/>
+                            <constraint firstItem="Lae-9s-gFj" firstAttribute="top" secondItem="Bzj-2H-dP8" secondAttribute="bottom" id="pyg-3R-aEI"/>
                             <constraint firstItem="VbK-Zo-eca" firstAttribute="top" secondItem="TnI-uS-F79" secondAttribute="bottom" id="sQY-mv-I6V"/>
                         </constraints>
                     </view>
@@ -309,6 +323,7 @@
                     <connections>
                         <outlet property="mapView" destination="TnI-uS-F79" id="zKz-EY-Ube"/>
                         <outlet property="sidebarButton" destination="ZhT-pr-GuW" id="F9l-Ij-UbF"/>
+                        <outlet property="tableView" destination="Lae-9s-gFj" id="ZXJ-bL-In7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvQ-p6-jAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,6 +333,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ACR-uf-a3B">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaH-XV-qGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="yn1-i7-wia" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xmj-Po-Ezt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -327,7 +343,6 @@
                         <segue destination="p0V-pg-ipj" kind="relationship" relationship="rootViewController" id="fIh-Hu-hzi"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YaH-XV-qGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-452" y="633"/>
         </scene>
@@ -336,6 +351,6 @@
         <image name="menu" width="28" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F3p-R0-sRE"/>
+        <segue reference="fIh-Hu-hzi"/>
     </inferredMetricsTieBreakers>
 </document>
